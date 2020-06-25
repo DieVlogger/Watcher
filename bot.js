@@ -19,7 +19,7 @@ const cooldowns = new Discord.Collection();
 client.on('ready', () => {
 	client.user.setPresence({
 		game: {
-			name: 'elite!help',
+			name: 'elite!help', //Status des Bots bitte hier einfach ändern PS MIT // machst du ein Zeilen kommentar
 			type: 0
 		}
 	})
@@ -78,43 +78,7 @@ client.on('message', message => {
 	}
 });
 
-client.on('messageReactionAdd', (reaction, user) => {
-	let message = reaction.message, emoji = reaction.emoji;
-	//Wenn SupportChannel
-	if (message.channel.id == "696821086846844969") {
-		if (emoji.name == '📩') {
-			if (user.id !== '712200237690650644') {
-				reaction.remove(user);
-				//CREATE CHANNEL
-				message.guild.createChannel('Support_'+user.username, 0) //ID=0 für TEXT und ID = 2 Für Voice
-				.then(newchannel => {
-					newchannel.overwritePermissions(
-						newchannel.guild.id, {
-							READ_MESSAGES: false
-						   }
-					)
-					newchannel.overwritePermissions(
-						user.id, {
-							READ_MESSAGES: true
-						   }
-					)
-					newchannel.overwritePermissions(
-						'697424990592696350', {
-							READ_MESSAGES: true
-						   }
-					)
-				})
-				.catch(err => {
-					message.channel.send("fehler:"+err)
-				});
-			}
 
-		}
-		else {
-			reaction.remove(user);
-		}
-	}
-});
 
 
 
