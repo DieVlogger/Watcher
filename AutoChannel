@@ -1,5 +1,0 @@
-
-const GuildChannel = require('./GuildChannel')
-voicechannel.create()
- if (channel && channel.type === 'voice')
-  
