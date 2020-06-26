@@ -19,7 +19,7 @@ const cooldowns = new Discord.Collection();
 client.on('ready', () => {
 	client.user.setPresence({
 		game: {
-			name: 'elite!help', //Status des Bots bitte hier einfach ändern PS MIT // machst du ein Zeilen kommentar
+			name: 'createChannel and Looking for BadWords', //Status des Bots bitte hier einfach ändern PS MIT // machst du ein Zeilen kommentar
 			type: 0
 		}
 	})
