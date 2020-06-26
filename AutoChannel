@@ -1,0 +1,4 @@
+
+voicechannel.create()
+ if (channel && channel.type === 'voice')
+  GuildChannel = require('./GuildChannel')
