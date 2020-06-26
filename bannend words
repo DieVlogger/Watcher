@@ -1,4 +1,0 @@
-if {user} message.send 
-    Hurensohn;missgeburt;mösenknecht
-{message.delete}
-{message.send; dieses wort wurde wegen beleidigung gelöscht; #bad-words}
