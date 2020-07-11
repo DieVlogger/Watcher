@@ -1,5 +1,0 @@
-if user message.send 
-    Hurensohn;missgeburt;mösenknecht
-        message.delete
-message.channel.send channel_id=717475417367248978 
-('Diese Nachricht wurde gelöscht wegen BadWordUsage')
