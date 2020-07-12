@@ -1,8 +1,0 @@
-
-voicechannel.create()
- if (channel && channel.type === 'voice')
-  GuildChannel = require('./GuildChannel')
-
-
-textchannel.create()
-    message.channel.send ('here u can react with :+1: to accept an user wil join your own channel')
